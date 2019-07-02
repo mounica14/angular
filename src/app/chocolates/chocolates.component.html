@@ -1,0 +1,18 @@
+
+<div><h1 > THE CHOCOLATE WORLD</h1>
+<div style="text-align: center"></div>
+<div [style.color]="'brown'">
+</div>
+</div>
+<h2>My Chocolates</h2>
+<ul class="chocolates">
+  <li *ngFor="let chocolate of chocolates"  
+  [class.selected]="chocolate === selectedChocolate"
+  (click)="onSelect(chocolate)">
+  <span class="badge">{{chocolate.name | uppercase }} </span>
+  </li>
+</ul>
+
+<app-chocolate-detail [chocolate]="selectedChocolate"></app-chocolate-detail>
+
+ 

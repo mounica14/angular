@@ -1,0 +1,26 @@
+<p>chocolate Details</p>
+<div *ngIf="chocolate">
+
+    <h2>{{chocolate.name | uppercase}} </h2>
+    
+    <div>
+      <label>name:
+        <input [(ngModel)]="chocolate.name" placeholder="name"/>
+      </label>
+    </div>
+
+<div>
+    <label>Price:
+        <input [(ngModel)]="chocolate.price" placeholder="price"/>
+
+    </label>
+</div>
+
+<div>
+    <label>brand:
+        <input [(ngModel)]="chocolate.brand" placeholder="Brand"/>
+
+    </label>
+</div>
+  
+  </div>
